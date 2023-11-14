@@ -1,0 +1,6 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ui-bg-main);
+  min-height: 100vh;
+}

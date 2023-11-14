@@ -1,0 +1,51 @@
+@import 'reset.css';
+@import 'normalize.css';
+
+@import "colors.css";
+@import '../assets/fonts/Coanda/stylesheet.css';
+@import '../assets/fonts/Stolzl/stylesheet.css';
+
+/* common.blocks */
+@import '../components/@common.blocks/layout.css';
+@import '../components/@common.blocks/button.css';
+@import '../components/@common.blocks/tag.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px !important;
+}
+
+body {
+  font-family: 'Stolzl', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: unset;
+  color: inherit;
+}
+
+a:active,
+a:focus {
+  outline: none;
+}
+
+button,
+input {
+  outline: unset;
+}

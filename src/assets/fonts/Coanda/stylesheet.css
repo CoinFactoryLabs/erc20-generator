@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Coanda';
+  src: local('Coanda Bold'), local('Coanda-Bold'),
+    url('Coanda-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Coanda';
+  src: local('Coanda-Regular'), local('Coanda-Regular'),
+    url('Coanda-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}

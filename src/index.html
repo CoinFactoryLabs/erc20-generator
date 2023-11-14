@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='description' content='Create and deploy your own ERC-20 tokens with ease on Ethereum, Base, Polygon from your browser' />
+  <meta property='og:title' content='ERC-20 & BEP-20 Token Generator' />
+  <meta property='og:description' content='Create and deploy your own ERC-20 tokens with ease on Ethereum, Base, Polygon from your browser' />
+  <meta property='og:type' content='website' />
+  <meta property='og:site_name' content='ERC-20 Generator' />
+  <meta property='og:url' content='https://CoinFactoryLabs.github.io/erc20-generator' />
+
+  <meta property='og:image' content='https://res.cloudinary.com/coinfactory/image/upload/v1697624998/website/xmzglfwxhkynupcgiwun.jpg' />
+  <meta property='og:image:height' content='630' />
+  <meta property='og:image:width' content='1200' />
+
+  <meta property='twitter:image' content={image} />
+  <meta name='twitter:card' content='summary_large_image' />
+
+  <meta name='keywords' content='CoinFactory, erc20, deployer, token generator' />
+  <link rel='icon' type='image/svg+xml' href='./assets/favicon/favicon.svg' />
+
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
+
+  <link rel="stylesheet" href="styles/global.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          spacing: {
+            0.2: '.2rem',
+            0.4: '.4rem',
+            0.5: '.5rem',
+            0.6: '.6rem',
+            0.8: '.8rem',
+            1: '1rem',
+            1.6: '1.6rem',
+            1.4: '1.4rem',
+            2: '2rem',
+            3: '3rem',
+            4: '4rem',
+            5: '5rem',
+            6: '6rem',
+            8: '8rem',
+            10: '10rem',
+            11: '11rem',
+            12: '12rem',
+            13: '13rem',
+          },
+        },
+        container: {
+          center: false,
+          padding: {
+            DEFAULT: '2rem',
+            sm: '0'
+          },
+          screens: {
+            sm: '600px',
+            md: '728px',
+            lg: '984px',
+            xl: '1150px',
+            '2xl': '1150px',
+          },
+        },
+        fontSize: {
+          xs: '1.2rem',
+          sm: '1.4rem',
+          base: '1.6rem',
+          lg: '1.8rem',
+          xl: '2.2rem',
+          '2xl': '2.4rem',
+          '4xl': '4rem',
+          '5xl': '6rem',
+        },
+        fontFamily: {
+          mono: ['Coanda']
+        },
+        colors: {
+          'main': '#FAF8FF',
+          'gray-06': 'rgba(0, 0, 0, .6)',
+          'gray-05': 'rgba(0, 0, 0, .5)',
+          'primary-30': 'rgba(118, 102, 246, 0.30)'
+        }
+      }
+    }
+  </script>
+  <title>ERC-20 & BEP-20 Token Generator | CoinFactory</title>
+</head>
+<body>
+  <main class="flex flex-col min-h-screen bg-main">
+    <header class="pt-2 md:pt-6">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-1 md:gap-1.6">
+          <img src="./assets/images/logo.svg" width="50" height="50" alt="CoinFactory">
+          <span class="text-base md:text-2xl font-medium">
+            Coin Factory
+          </span>
+        </div>
+        <a class="button button_color_secondary button_size_md"
+           href="https://coinfactory.app/?r=erc20-generator"
+           rel="noreferrer"
+        >
+          Create token
+        </a>
+      </div>
+    </header>
+    <section class="mt-2 mb-4 md:mt-11 md:mb-12 flex-1">
+      <div class="container px-0.6 md:px-0 mx-auto flex flex-col-reverse md:flex-row flex-items justify-between gap-4 lg:gap-5">
+        <div class="flex-1 px-1.6 md:px-0">
+          <h1 class="mb-3 text-4xl leading-tight font-bold lg:text-5xl lg:leading-[7rem]">
+            Create Your Own<br/>
+            ERC-20 Token<br/>
+            in 3 steps
+          </h1>
+          <p class="mb-4 text-lg md:text-xl leading-[2.6rem] font-mono font-bold text-gray-06">
+            Create and deploy your own ERC-20 tokens with ease on Ethereum, Base, Polygon from your browser, including mintable, burnable, taxable and other features.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
+            <a class="tag"
+               href="https://coinfactory.app/?r=erc20-generator&network=ethereum"
+               rel="noreferrer"
+            >
+              <img src="./assets/images/ethereum.svg" width="50" height="50" alt="ethereum" />
+              <span class="text-sm leading-[1.6rem]">
+                Create ERC20 on Ethereum
+              </span>
+            </a>
+            <a class="tag"
+               href="https://coinfactory.app/?r=erc20-generator&network=base"
+               rel="noreferrer"
+            >
+              <img src="./assets/images/base.svg" width="50" height="50" alt="base" />
+              <span class="text-sm leading-[1.6rem]">
+                Create ERC20 on Base
+              </span>
+            </a>
+            <a class="tag"
+               href="https://coinfactory.app/?r=erc20-generator&network=matic"
+               rel="noreferrer"
+            >
+              <img src="./assets/images/polygon.svg" width="50" height="50" alt="matic" />
+              <span class="text-sm leading-[1.6rem]">
+                Create ERC20 on Polygon
+              </span>
+            </a>
+            <a class="tag"
+               href="https://coinfactory.app/?r=erc20-generator&network=bsc"
+               rel="noreferrer"
+            >
+              <img src="./assets/images/bsc.svg" width="50" height="50" alt="binance-smart-chain" />
+              <span class="text-sm leading-[1.6rem]">
+                Create BEP20 on BSC
+              </span>
+            </a>
+            <a class="tag tag--free"
+               href="https://coinfactory.app/?r=erc20-generator&network=sepolia"
+               rel="noreferrer"
+            >
+              <span class="tag__logo">
+                <img
+                  src="./assets/images/ethereum.svg"
+                  width="50" height="50"
+                  alt="sepolia-testent"
+                />
+              </span>
+              <span class="text-sm leading-[1.6rem]">
+                Create ERC20 on Sepolia
+              </span>
+            </a>
+            <div class="tag tag--disabled justify-center">
+              <span class="text-sm leading-[1.6rem]">
+                More coming soon
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/images/cover.png" width="1100" height="1100" alt="ERC20 Generator"/>
+        </div>
+      </div>
+    </section>
+    <footer class="pb-3 sm:pb-6">
+      <div class="container px-1.6 md:px-0 mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-2">
+        <span class="text-sm text-gray-05">
+          2023 Coin Factory. All rights reserved.
+        </span>
+        <div class="flex items-center gap-3 justify-end">
+          <a
+            class="text-sm leading-[2.6rem] underline underline-offset-8 decoration-primary-30"
+            href="https://twitter.com/coinfactory_app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Twitter
+          </a>
+          <a
+            class="text-sm leading-[2.6rem] underline underline-offset-8 decoration-primary-30"
+            href="https://www.youtube.com/@coinfactory_app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Youtube
+          </a>
+          <a
+            class="text-sm leading-[2.6rem] underline underline-offset-8 decoration-primary-30"
+            href="https://t.me/coinfactory_app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Telegram
+          </a>
+          <a
+            class="text-sm leading-[2.6rem] underline underline-offset-8 decoration-primary-30"
+            href="https://medium.com/@coinfactory"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Medium
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

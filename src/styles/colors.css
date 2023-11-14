@@ -1,0 +1,21 @@
+:root {
+  /* theme colors */
+  --ui-color-primary: #6C41EB;
+  --ui-color-primary-hover: #916EF5;
+
+  --ui-bg-main: #FAF8FF;
+
+  /* text colors */
+  --ui-text-color-default: #000000;
+  --ui-text-color-gray-06: rgba(0, 0, 0, 0.6);
+  --ui-text-color-white: #ffffff;
+
+  /* buttons */
+  --ui-button-bg-primary: var(--ui-color-primary);
+  --ui-button-bg-primary-hover: var(--ui-color-primary-hover);
+  --ui-button-text-primary: #ffffff;
+
+  --ui-button-bg-secondary: #000000;
+  --ui-button-bg-secondary-hover: #383838;
+  --ui-button-text-secondary: #ffffff;
+}
